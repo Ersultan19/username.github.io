@@ -162,8 +162,8 @@ nav ul li a {
     background-color: #22c35e;
 }
 
-.btn {
-    background-color: #25D366;
+.buy-btn {
+     background-color: #25D366;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -174,10 +174,8 @@ nav ul li a {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    padding: 5px 10px;
 }
-
-.btn {
+.buy-btn {
     background-color: #22c35e;
 }
 
