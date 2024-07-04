@@ -47,15 +47,21 @@
 
     <section id="contacts" class="contacts">
         <h1>Контакты</h1>
-        <form action="send_email.php" method="post">
-            <label for="name">Имя, Номер телефона:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            
-            <input type="submit" value="Оставить заявку">
-        </form>
+       <form class="obratnuj-zvonok" autocomplete="off" action='send_email.php' method='post'>
+	<div class="form-zvonok"> 
+		<div>
+			<label>Имя <span>*</span></label>
+			<input type='text' name='username' required></div>
+		<div>
+			<label>Номер телефона<span>*</span></label>
+			<input type='text' name='usernumber' required></div>
+		<div>
+			<label>Сообщение</label>
+			<input type='text' name='question'>
+		</div>
+		<input class="bot-send-mail" type='submit' value='Послать заявку'>
+	</div>
+</form>
     </section>
 
     <footer>
