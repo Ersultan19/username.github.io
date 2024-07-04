@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	
+	<script>
+        function openWhatsApp() {
+            window.open("https://wa.me/+77471510620", "_blank");
+        }
+    </script>
+	
     <header>
         <nav>
             <ul>
@@ -47,23 +54,9 @@
 
     <section id="contacts" class="contacts">
         <h1>Контакты</h1>
-       <form class="obratnuj-zvonok" autocomplete="off" action='send_email.php' method='post'>
-	<div class="form-zvonok"> 
-		<div>
-			<label>Имя <span>*</span></label>
-			<input type='text' name='username' required></div>
-		<div>
-			<label>Номер телефона<span>*</span></label>
-			<input type='text' name='usernumber' required></div>
-		<div>
-			<label>Сообщение</label>
-			<input type='text' name='question'>
-		</div>
-		<input class="bot-send-mail" type='submit' value='Послать заявку'>
-	</div>
-</form>
+        <a href="https://wa.me/+77471510620" class="whatsapp-button">Оставить заявку</a>
     </section>
-
+	    
     <footer>
         <p>&copy; 2024 Сладкий нектар. Все права защищены.</p>
     </footer>
