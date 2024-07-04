@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сладкий нектар</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#benefits">Польза</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Натуральный мед высокого качества</h1>
+        <p>Узнайте больше о нашем продукте и его преимуществах.</p>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <h1>Наши продукты</h1>
+        <div class="product-card">
+            <img src="https://i2.wp.com/www.thesciencefaith.com/wp-content/uploads/2015/09/honey_jar_face_mask.jpg?fit=1500%2C768&ssl=1">
+            <h2>Мед разнотравье</h2>
+            <p>Мед разнотравье - это натуральный продукт, который пчелы производят, собирая нектар с различных цветущих растений. Благодаря этому он обладает уникальными вкусовыми и ароматическими свойствами, которые сложно найти в других видах меда. Употребляя мед разнотравье, вы заботитесь о своем здоровье и получаете удовольствие от его уникального вкуса и аромата.</p>
+        </div>
+        <!-- Добавьте больше продуктов по мере необходимости -->
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2>Польза меда</h2>
+        <ul>
+            <li>Мед укрепляет иммунную систему.</li>
+            <li>Помогает при простудных заболеваниях и кашле.</li>
+            <li>Улучшает пищеварение и способствует здоровью кишечника.</li>
+            <li>Он обладает антибактериальными и противовоспалительными свойствами.</li>
+            <li>Антиоксидантные свойства замедляет процесс старения и снижая риск развития хронических заболеваний.</li>
+            <li>Мед содержит антиоксиданты и витамины, которые помогают укрепить иммунитет и защитить организм от заболеваний.</li>
+        </ul>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h1>Контакты</h1>
+        <form action="send_email.php" method="post">
+            <label for="name">Имя, Номер телефона:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Оставить заявку">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Сладкий нектар. Все права защищены.</p>
+    </footer>
+</body>
+</html>

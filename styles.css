@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    position: fixed; /* Делаем навигацию фиксированной */
+    top: 0;
+    width: 100%;
+    background-color: #ffc342;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #e6e6e6;
+    border-radius: 4px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    display: inline-block;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: #e9c46a; /* медовый цвет */
+    margin-top: 0px; /* компенсируем высоту фиксированного header */
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero p {
+    margin: 20px 0 30px;
+    font-size: 1.5em;
+}
+
+.benefits {
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+.benefits h2 {
+    text-align: center;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits ul li {
+    background: #e9c46a; /* медовый цвет */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.catalog {
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #e9c46a; /* медовый цвет */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.product-card img {
+    max-width: 300px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота, пропорциональная ширине */
+    float: left; /* Выравнивание изображения влево */
+    margin-right: 10px; /* Отступ справа для текста */
+    margin-bottom: 20px; /* Отступ снизу */
+        max-width: 100%; /* Изображение не будет превышать ширину контейнера */
+        height: auto; /* Автоматическая высота для сохранения пропорций */
+        display: block; /* Убираем отступы */
+        margin: 0 auto; /* Выравнивание по центру (если требуется) */
+}
+
+.product-card h2 {
+    margin: 10px 0;
+}
+
+.contacts {
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f4a261; /* медовый цвет */
+    border-top: 1px solid #e76f51;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        background: #e76f51; /* медовый цвет */
+        color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 5px 10px;
+    }
+}
