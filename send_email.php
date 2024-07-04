@@ -1,30 +1,32 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = strip_tags(trim($_POST["name"]));
-    $message = trim($_POST["message"]);
+$to = "ersultanbai17@gmail.com";//Почтовый ящик, на который будет отправлено сообщение
+$subject = "Тема сообщения";//Тема сообщения
+$headers = "Content-type: text/html; charset=utf-8 \r
+";
 
-    if (empty($name) || empty($message)) {
-        http_response_code(400);
-        echo "Пожалуйста, заполните форму корректно и попробуйте снова.";
-        exit;
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if(isset($_POST["username"])){
+        $name = trim(strip_tags($_POST["username"]));
     }
-
-    $to = "ersultanbai17@gmail.com"; // Замените своим email
-    $subject = "Новое сообщение с сайта от $name";
-    $email_content = "Имя: $name\n";
-    $email_content .= "Сообщение:\n$message\n";
-
-    $email_headers = "From: $name <$recipient>";
-
-    if (mail($to, $subject, $email_content, $email_headers)) {
-        http_response_code(200);
-        echo "Спасибо! Ваше сообщение было отправлено.";
-    } else {
-        http_response_code(500);
-        echo "Что-то пошло не так, сообщение не было отправлено.";
+    if(isset($_POST["usernumber"])){
+        $number = trim(strip_tags($_POST["usernumber"]));
     }
+    if (isset($_POST["question"])) {
+        $question = trim(strip_tags($_POST["question"]));
+    }
+  
+    $message = "<html>";
+    $message .= "<body>";
+    $message .= "Телефон: ".$number;
+    $message .= "<br />";
+    $message .= "Имя: ".$name;
+    $message .= "<br />";
+    $message .= "Вопрос: ".$question;
+    $message .= "</body>";
+    $message .= "</html>";
+  
+    mail($to, $subject, $message, $headers);
 } else {
-    http_response_code(403);
-    echo "Был возникнут ошибка при отправке сообщения.";
-}
+    exit;
+} 
 ?>
