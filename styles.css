@@ -162,7 +162,7 @@ nav ul li a {
     background-color: #22c35e;
 }
 
-.a.btn {
+.btn {
     background-color: #25D366;
     border: none;
     color: white;
@@ -175,6 +175,10 @@ nav ul li a {
     cursor: pointer;
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+.btn {
+    background-color: #22c35e;
 }
 
 footer {
