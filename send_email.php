@@ -9,14 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $recipient = "ersultanbai17@gmail.com"; // Замените своим email
+    $to = "ersultanbai17@gmail.com"; // Замените своим email
     $subject = "Новое сообщение с сайта от $name";
     $email_content = "Имя: $name\n";
     $email_content .= "Сообщение:\n$message\n";
 
     $email_headers = "From: $name <$recipient>";
 
-    if (mail($recipient, $subject, $email_content, $email_headers)) {
+    if (mail($to, $subject, $email_content, $email_headers)) {
         http_response_code(200);
         echo "Спасибо! Ваше сообщение было отправлено.";
     } else {
